@@ -13,7 +13,7 @@ app.options('*', cors());
 const api = process.env.API_URL;
 const prouductsRouter = require('./routers/products');
 const imagesRouter = require('./routers/images');
-const PORT = process.env.PORT || 3030;
+const PORT = process.env.PORT || 3000;
 
 //middleware
 app.use(bodyParser.json());
@@ -33,6 +33,6 @@ mongoose.connect(process.env.MONGODB_URI)
 
 app.listen(PORT, ()=>{
    
-    console.log(`server is running http://localhost:${PORT}`);
+    console.log(`server started on port ${PORT}`);
 })
  
