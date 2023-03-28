@@ -13,7 +13,7 @@ app.options('*', cors());
 const api = process.env.API_URL;
 const prouductsRouter = require('./routers/products');
 const imagesRouter = require('./routers/images');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 
 //middleware
 app.use(bodyParser.json());
